@@ -1,0 +1,22 @@
+print("------BOLETIM DE NOTAS------\n")
+nome = str(input("Digite o nome do aluno: "))
+disciplina = str(input("Digite qual a disciplina: "))
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+media = (nota1 + nota2) / 2
+status = str
+print(f"A media do aluno é: {media}\n")
+if media >= 0 and media <= 39:
+         status = "Reprovado"
+elif media >= 40 and media <= 59:
+        status = "Recuperação"
+elif media >= 60 and media <= 100:
+        status = "Aprovado"
+elif media > 100:
+        status = "A media excede o limite de nota"
+print("---RELATÓRIO---\n")
+print(f"Aluno: {nome}\n")
+print("Curso: Engenharia de Software\n")
+print("Semestre: Segundo\n")
+print(f"Disciplina: {disciplina}\n")
+print(f"Status: {status}\n")
