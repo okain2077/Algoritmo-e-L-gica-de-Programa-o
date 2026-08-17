@@ -1,0 +1,51 @@
+from multiprocessing.spawn import spawn_main
+
+a = float(input("Digite um numero: "))
+b = float(input("Digite um segundo numero: "))
+
+soma = float(a+b)
+sub = float(a-b)
+mult = float(a*b)
+div = float(a/b)
+
+print("------------------------------\n")
+print(f"A soma é : {soma}\n")
+print("------------------------------\n")
+print(f"A subtração é: {sub}\n")
+print("------------------------------\n")
+print(f"A multiplicação é: {mult}\n")
+print("------------------------------\n")
+print(f"A divisão é: {div}")
+print("------------------------------")
+
+c = float(input("Digite um numero: "))
+
+dobro = float(c*2)
+triplo = float(c*3)
+ant = float(c-1)
+suc = float(c+1)
+
+print("--------------------------\n")
+print(f"O dobro é: {dobro}\n")
+print("--------------------------\n")
+print(f"O triplo é: {triplo}\n")
+print("--------------------------\n")
+print(f"O antecessor é: {ant}\n")
+print("--------------------------\n")
+print(f"O sucessor é: {suc}")
+print("--------------------------")
+
+alturat = float(input("Digite a altura do triângulo: "))
+baset = float(input("Digite a base do triangulo: "))
+
+areat = float((alturat*baset) / 2)
+
+print(f"A área do triângulo é: {areat}\n")
+
+lado1 = float(input("Digite o primeiro lado do retângulo: "))
+lado2 = float(input("Digite o segundo lado do retângulo: "))
+
+perimetro = float((lado1*2) +(lado2*2))
+
+print(f"O perímetro do retângulo é: {perimetro}\n")
+print("--------------------------")
