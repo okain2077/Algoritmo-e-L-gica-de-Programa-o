@@ -1,0 +1,44 @@
+#Positivo ou Negativo
+
+a = float(input("Digite um valor: "))
+
+if (a > 0):
+    print("O numero é POSITIVO!")
+elif (a == 0):
+    print("O numero é igual a ZERO!")
+elif (a < 0):
+    print("O numero é NEGATIVO!")
+
+#Impar ou Par
+
+b = float(input("Digite um valor: "))
+
+if (b % 2 == 0):
+    print("O numero é PAR!")
+elif (b % 2 == 1):
+    print("O numero é IMPAR!")
+
+#Qual é maior? (2 Variaveis)
+
+c = float(input("Digite um valor: "))
+d = float(input("Digite um segundo valor: "))
+
+if (c > d):
+    print(f"{c} é maior que {d}")
+elif (c == d):
+    print("Os valores são iguais!")
+elif (c < d):
+    print(f"{d} é maior que {c}")
+
+#Qual é maior? (3 Variaveis)
+
+e = float (input("Digite um valor: "))
+f = float(input("Digite um segundo valor: "))
+g = float(input("Digite um terceiro valor: "))
+
+if (e > f) and (e > g):
+    print(f"{e} é maior que {f} e {g}")
+elif (f > e) and (f > g):
+    print(f"{f} é maior que {g} e {e}")
+elif (g > f) and (g > e):
+    print(f"{g} é maior que {f} e {e}")
