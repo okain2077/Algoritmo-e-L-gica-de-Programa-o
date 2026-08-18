@@ -1,0 +1,87 @@
+programa {
+  funcao inicio() {
+
+    real a, b, c, d, t, f, g
+  
+
+    //Positivo ou Negativo
+
+    escreva("Digite um numero: ")
+    leia(a)
+
+    se (a == 0)
+    {
+      escreva("Este numero é igual a ZERO!\n")
+    }
+    se (a > 0)
+    {
+      escreva("Este numero é POSITIVO!\n")
+    }
+    se (a < 0)
+    {
+    escreva("Este numero é NEGATIVO!\n")
+    }
+
+    //Impar ou Par
+
+    escreva("Digite um numero: ")
+    leia(b)
+
+    se (b % 2 == 1)
+    {
+      escreva("Este numero é IMPAR!\n")
+    }
+    se (b % 2 == 0)
+    {
+      escreva("Este numero é PAR!\n")
+    }
+         //Qual é maior?
+
+    escreva("Digite um numero: ")
+    leia(c)
+    escreva("Digite um segundo numero: ")
+    leia(d)
+
+    se (c > d)
+    {
+      escreva(c , " é maior que ", d, "\n")
+    }
+    se (d > c)
+    {
+      escreva(d , " é maior que ", c, "\n")
+    }
+    se (c == d)
+    {
+      escreva("Os numeros tem o mesmo valor!\n")
+    }
+              //Qual é o maior? (3 numeros)
+
+    escreva("Digite um numero: ")
+    leia(t)
+    escreva("Digite um segundo numero: ")
+    leia(f)
+    escreva("Digite um terceiro numero: ")
+    leia(g)
+
+    se (t > f e t > g)
+    {
+      escreva(t, " é maior que ", f, " e ", g)
+    }
+    se (f > t e f > g)
+    {
+      escreva(f, " é maior que ", t, " e ", g)
+    }
+    se (g > f e g > t)
+    {
+      escreva(g, " é maior que ", f, " e ", t)
+    }
+    se (t == f == g)
+    {
+      escreva("Os numeros tem valor igual")
+    }
+   
+ 
+  }
+}
+
+
