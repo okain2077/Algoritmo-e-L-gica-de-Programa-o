@@ -1,0 +1,21 @@
+#Exercicio 1
+idade = int(input("Qual a sua idade?\n "))
+titulo = int(input("Digite 1 se você possui titulo de eleitor e 0 se você nao possui\n "))
+
+if idade >= 18 and titulo == 1:
+    print("Você pode votar!")
+else:
+    print("Você não pode votar!")
+#Exercicio 2
+
+valor = float(input("Qual o valor de compra?\n "))
+forma = str(input("Qual a forma de compra? (avista ou aprazo) \n"))
+
+desconto = valor * 0.10
+valord = valor - desconto
+
+if forma == "avista":
+    print("O valor avista inclue 10% de desconto, assim saindo por {}".format(valord))
+else:
+    print("O valor a prazo é : {}".format(valor))
+
