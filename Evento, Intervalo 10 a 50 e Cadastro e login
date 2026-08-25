@@ -1,0 +1,38 @@
+#Exercicio 1
+print("EVENTO!\n")
+
+idade = int(input("Qual a sua idade? \n"))
+ingresso = str(input("Você tem  ingresso para o evento? \n"))
+
+if ingresso == "Sim" and idade >= 18 or ingresso == "sim" and idade <= 18:
+    print("Você pode entrar no evento!")
+else:
+    print("Você não pode entrar no evento!")
+
+#Exercicio 2
+print("Intervalo 10 a 50\n")
+
+n = float(input("Digite um numero: \n"))
+
+if n >= 10 and n <= 50:
+    print("O numero digitado esta entre 10 e 50!")
+else:
+    print("O numero digitado não esta entre 10 e 50!")
+
+#Exercicio 3
+print("Cadastro e autenticação!\n")
+
+cadastro = str(input("Qual o nome do cadastro? \n"))
+senha = int(input("Qual a senha do cadastro? \n"))
+
+print("Agora faremos o Login!\n")
+
+login = str(input("Qual o login? \n"))
+if cadastro == login:
+    senhal = int(input("Qual a senha? \n"))
+    if senha == senhal:
+        print("Login com sucesso!")
+    else:
+        print("Senha incorreta!")
+else:
+    print("Login incorreto!")
