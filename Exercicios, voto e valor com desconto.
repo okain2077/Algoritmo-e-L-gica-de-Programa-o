@@ -7,7 +7,15 @@ if idade >= 18 and titulo == 1:
 else:
     print("Você não pode votar!")
 #Exercicio 2
+idade = int(input("Qual a sua idade?\n "))
+carteira = int(input("Digite 1 se você possui cnh e 0 se você nao possui\n "))
 
+if idade >= 18 and carteira == 1:
+    print("Você pode dirigir!")
+else:
+    print("Você não pode dirigir!")
+
+#Exercicio 3
 valor = float(input("Qual o valor de compra?\n "))
 forma = str(input("Qual a forma de compra? (avista ou aprazo) \n"))
 
