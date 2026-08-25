@@ -43,7 +43,7 @@ print("------------------------------\n")
 print(f"A divisão é: {div}")
 print("------------------------------")
 
-Exercicio 3)
+#Exercicio 3)
 
 c = float(input("Digite um numero: "))
 
