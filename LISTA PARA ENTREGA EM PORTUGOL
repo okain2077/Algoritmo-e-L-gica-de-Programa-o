@@ -1,0 +1,268 @@
+#Exercicio 1)
+
+programa {
+  funcao inicio() {
+
+    cadeia nome
+    cadeia disciplina
+    real nota1, nota2
+    real media
+    cadeia status
+
+    escreva("--------BOLETIM DE NOTAS--------\n")
+    escreva("Digite o nome do aluno: ")
+    leia(nome)
+    escreva("Digite a disciplina: ")
+    leia(disciplina)
+    escreva("Digite a primeira nota do aluno: ")
+    leia(nota1)
+    escreva("Digite a segunda nota do aluno: ")
+    leia(nota2)
+
+    media = (nota1 + nota2) / 2
+
+    se (media >= 0 e media <= 39)
+    {
+      status = ("reprovado")
+    }
+       se (media >= 40 e media <= 59)
+    {
+      status = ("recuperação")
+    }
+    se (media > 59 e media < 100)
+    {
+      status = ("aprovado")
+    }
+   
+ 
+
+    escreva("A media do aluno é: ", media )
+    escreva("\n")
+    escreva("---RELATORIO---\n")
+    escreva("Aluno: ", nome)
+    escreva("\n")
+    escreva("Curso: Engenharia de Software \n")
+    escreva("Semestre: Segundo \n")
+    escreva("Disciplina: ", disciplina)
+    escreva("\n")
+    se (media < 100)
+    {
+    escreva("Status: ", status)
+    }
+  }
+}
+
+#Exercicio 2)
+
+programa {
+  funcao inicio() {
+    
+    real a, b, c, soma, sub, mult, div, dobro, triplo, suc, ant, alturat, baset, areat, lado1, lado2, perimetro
+    
+    escreva("Digite um numero: ")
+    leia(a)
+    escreva("Digite um segundo numero: ")
+    leia(b)
+
+    soma = a + b
+    sub = a - b
+    mult = a * b
+    div = a / b
+    
+
+    escreva("A soma é: ", soma, "\n") 
+    escreva("A subtração é: ", sub, "\n")
+    escreva("A multiplicação é: ", mult, "\n")
+    escreva("A divisão é ", div, "\n")
+  }
+}
+
+#Exercicio 3)
+
+programa {
+  funcao inicio() {
+escreva("Digite um numero: ")
+    leia(c)
+
+    dobro = c * 2
+    triplo = c * 3
+    ant = c - 1
+    suc = c + 1
+
+    escreva("O dobro é: ", dobro, "\n")
+    escreva("o triplo é: ",triplo, "\n")
+    escreva("O antecessor é: ", ant, "\n")
+    escreva("O sucesor é : ", suc, "\n")
+    }
+}
+
+#Exercicio 4)
+
+programa {
+  funcao inicio() {
+
+escreva("Qual a altura do triângulo: ")
+    leia(alturat)
+    escreva("Qual a base do triângulo: ")
+    leia(baset)
+
+    areat = (baset * alturat) / 2
+
+    escreva("A área do triângulo é: ", areat, "\n")
+  }
+}
+
+#Exercicio 5)
+
+programa {
+  funcao inicio() {
+
+escreva("Digite o lado1 do retângulo: ")
+    leia(lado1)
+    escreva("Digite o lado2 do retângulo: ")
+    leia(lado2)
+
+    perimetro = (lado1 * 2) + (lado2 * 2)
+
+    escreva("O perímetro do retângulo é: ", perimetro)
+  }
+}
+
+#Exercicio 6)
+
+programa {
+  funcao inicio() {
+
+ real a, b, c, d, t, f, g
+  
+
+    //Positivo ou Negativo
+
+    escreva("Digite um numero: ")
+    leia(a)
+
+    se (a == 0)
+    {
+      escreva("Este numero é igual a ZERO!\n")
+    }
+    se (a > 0)
+    {
+      escreva("Este numero é POSITIVO!\n")
+    }
+    se (a < 0)
+    {
+    escreva("Este numero é NEGATIVO!\n")
+    }
+  }
+}
+
+#Exercicio 7)
+
+programa {
+  funcao inicio() {
+
+ real a, b, c, d, t, f, g
+  
+
+    //Positivo ou Negativo
+
+    escreva("Digite um numero: ")
+    leia(a)
+
+    se (a == 0)
+    {
+      escreva("Este numero é igual a ZERO!\n")
+    }
+    se (a > 0)
+    {
+      escreva("Este numero é POSITIVO!\n")
+    }
+    se (a < 0)
+    {
+    escreva("Este numero é NEGATIVO!\n")
+    }
+  }
+}
+
+#Exercicio 8)
+
+programa {
+  funcao inicio() {
+
+//Impar ou Par
+
+    escreva("Digite um numero: ")
+    leia(b)
+
+    se (b % 2 == 1)
+    {
+      escreva("Este numero é IMPAR!\n")
+    }
+    se (b % 2 == 0)
+    {
+      escreva("Este numero é PAR!\n")
+    }
+  }
+}
+
+#Exercicio 9)
+
+programa {
+  funcao inicio() {
+
+//Qual é maior?
+
+    escreva("Digite um numero: ")
+    leia(c)
+    escreva("Digite um segundo numero: ")
+    leia(d)
+
+    se (c > d)
+    {
+      escreva(c , " é maior que ", d, "\n")
+    }
+    se (d > c)
+    {
+      escreva(d , " é maior que ", c, "\n")
+    }
+    se (c == d)
+    {
+      escreva("Os numeros tem o mesmo valor!\n")
+    }
+  }
+}
+
+#Exercicio 10)
+
+programa {
+  funcao inicio() {
+
+ //Qual é o maior? (3 numeros)
+
+    escreva("Digite um numero: ")
+    leia(t)
+    escreva("Digite um segundo numero: ")
+    leia(f)
+    escreva("Digite um terceiro numero: ")
+    leia(g)
+
+    se (t > f e t > g)
+    {
+      escreva(t, " é maior que ", f, " e ", g)
+    }
+    se (f > t e f > g)
+    {
+      escreva(f, " é maior que ", t, " e ", g)
+    }
+    se (g > f e g > t)
+    {
+      escreva(g, " é maior que ", f, " e ", t)
+    }
+    se (t == f == g)
+    {
+      escreva("Os numeros tem valor igual")
+    }
+    
+  }
+}
+
