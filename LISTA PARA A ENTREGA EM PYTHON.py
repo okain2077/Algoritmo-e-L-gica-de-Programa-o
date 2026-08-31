@@ -181,8 +181,6 @@ else:
 
 #Exercicio 14)
 
-
-#Exercicio 2
 print("Intervalo 10 a 50\n")
 
 n = float(input("Digite um numero: \n"))
@@ -246,3 +244,26 @@ if idade >= 12 and idade <= 18:
         print("Você não pode fazer parte da pratica esportiva")
 else:
     print ("Você não tem a idade esperada no escopo!")
+
+#Exercício 18)
+
+podesair = str(input("Esta chovendo? \n"))
+if podesair.lower() == "nao":
+    podesair = "Pode sair"
+    print(podesair)
+else:
+    podesair = "Não pode sair"
+    print(podesair)
+
+#Exercicio 19)
+
+idade = int(input("Qual a sua idade? "))
+
+if idade < 12:
+    print("Você é uma criança!")
+if idade >= 12 and idade < 18:
+    print("Você é um adolescente!")
+if idade >= 18 and idade <50:
+    print("Você é um adulto!")
+if idade >= 50:
+    print("Você é idoso!")
