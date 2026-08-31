@@ -210,3 +210,39 @@ if cadastro == login:
         print("Senha incorreta!")
 else:
     print("Login incorreto!")
+
+#Exercicio 16)
+
+
+print("Calculadora Simples/n")
+
+a = float (input("Insira um numero: "))
+b = float (input("Insira um segundo numero: "))
+operador = str(input("Insira um operador: "))
+
+if operador == "+":
+    print(a+b)
+if operador == "-":
+    print(a-b)
+if operador == "*":
+    print(a*b)
+if operador == "/":
+    if b != 0:
+        print(a/b)
+    else:
+        print("Esta divisão não existe")
+
+#Exercicio 17)
+
+print("Prática Esportiva\n")
+
+idade = int(input("Informe sua idade: "))
+
+if idade >= 12 and idade <= 18:
+    autorizacao = str(input("Você possui autorização?\n"))
+    if autorizacao == "sim" or autorizacao == "Sim":
+        print("Você pode fazer parte da pratica esportiva")
+    else:
+        print("Você não pode fazer parte da pratica esportiva")
+else:
+    print ("Você não tem a idade esperada no escopo!")
