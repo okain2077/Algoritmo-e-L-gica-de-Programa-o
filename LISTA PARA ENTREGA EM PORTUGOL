@@ -266,3 +266,266 @@ programa {
   }
 }
 
+#Exercicio 11)
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro idade
+        inteiro carteira
+
+        escreva("Qual a sua idade?\n")
+        leia(idade)
+
+        escreva("Digite 1 se você possui CNH e 0 se você nao possui\n")
+        leia(carteira)
+
+        se (idade >= 18 e carteira == 1)
+        {
+            escreva("Você pode dirigir!")
+        }
+        senao
+        {
+            escreva("Você não pode dirigir!")
+        }
+    }
+}
+
+#Exercicio 12)
+
+O ChatGPT disse:
+Claro! Abaixo estão os Exercícios 12 até 18 convertidos para o Portugol Webstudio, mantendo a lógica dos seus códigos em Python.
+
+Exercício 12
+programa
+{
+    funcao inicio()
+    {
+        real valor
+        cadeia forma
+        real desconto
+        real valord
+
+        escreva("Qual o valor de compra?\n")
+        leia(valor)
+
+        escreva("Qual a forma de compra? (avista ou aprazo)\n")
+        leia(forma)
+
+        desconto = valor * 0.10
+        valord = valor - desconto
+
+        se (forma == "avista")
+        {
+            escreva("O valor a vista inclui 10% de desconto, assim saindo por ", valord)
+        }
+        senao
+        {
+            escreva("O valor a prazo é: ", valor)
+        }
+    }
+}
+
+#Exercicio 13
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro idade
+        cadeia ingresso
+
+        escreva("EVENTO!\n")
+
+        escreva("Qual a sua idade?\n")
+        leia(idade)
+
+        escreva("Você tem ingresso para o evento?\n")
+        leia(ingresso)
+
+        se ((ingresso == "Sim" e idade >= 18) ou (ingresso == "sim" e idade <= 18))
+        {
+            escreva("Você pode entrar no evento!")
+        }
+        senao
+        {
+            escreva("Você não pode entrar no evento!")
+        }
+    }
+}
+
+#Exercicio 14)
+
+programa
+{
+    funcao inicio()
+    {
+        real n
+
+        escreva("Intervalo 10 a 50\n")
+
+        escreva("Digite um numero:\n")
+        leia(n)
+
+        se (n >= 10 e n <= 50)
+        {
+            escreva("O numero digitado esta entre 10 e 50!")
+        }
+        senao
+        {
+            escreva("O numero digitado não esta entre 10 e 50!")
+        }
+    }
+}
+
+#Exercicio 15)
+
+programa
+{
+    funcao inicio()
+    {
+        cadeia cadastro
+        inteiro senha
+        cadeia login
+        inteiro senhal
+
+        escreva("Cadastro e autenticação!\n")
+
+        escreva("Qual o nome do cadastro?\n")
+        leia(cadastro)
+
+        escreva("Qual a senha do cadastro?\n")
+        leia(senha)
+
+        escreva("Agora faremos o Login!\n")
+
+        escreva("Qual o login?\n")
+        leia(login)
+
+        se (cadastro == login)
+        {
+            escreva("Qual a senha?\n")
+            leia(senhal)
+
+            se (senha == senhal)
+            {
+                escreva("Login com sucesso!")
+            }
+            senao
+            {
+                escreva("Senha incorreta!")
+            }
+        }
+        senao
+        {
+            escreva("Login incorreto!")
+        }
+    }
+}
+
+#Exercicio 16)
+
+programa
+{
+    funcao inicio()
+    {
+        real a
+        real b
+        cadeia operador
+
+        escreva("Calculadora Simples\n")
+
+        escreva("Insira um numero: ")
+        leia(a)
+
+        escreva("Insira um segundo numero: ")
+        leia(b)
+
+        escreva("Insira um operador: ")
+        leia(operador)
+
+        se (operador == "+")
+        {
+            escreva(a + b)
+        }
+        senao se (operador == "-")
+        {
+            escreva(a - b)
+        }
+        senao se (operador == "*")
+        {
+            escreva(a * b)
+        }
+        senao se (operador == "/")
+        {
+            se (b != 0)
+            {
+                escreva(a / b)
+            }
+            senao
+            {
+                escreva("Esta divisão não existe")
+            }
+        }
+    }
+}
+
+Exercicio 17)
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro idade
+        cadeia autorizacao
+
+        escreva("Prática Esportiva\n")
+
+        escreva("Informe sua idade: ")
+        leia(idade)
+
+        se (idade >= 12 e idade <= 18)
+        {
+            escreva("Você possui autorização?\n")
+            leia(autorizacao)
+
+            se (autorizacao == "sim" ou autorizacao == "Sim")
+            {
+                escreva("Você pode fazer parte da pratica esportiva")
+            }
+            senao
+            {
+                escreva("Você não pode fazer parte da pratica esportiva")
+            }
+        }
+        senao
+        {
+            escreva("Você não tem a idade esperada no escopo!")
+        }
+    }
+}
+
+Exercicio 18)
+
+programa
+{
+    funcao inicio()
+    {
+        cadeia podesair
+
+        escreva("Esta chovendo?\n")
+        leia(podesair)
+
+        se (podesair == "nao" ou podesair == "Nao")
+        {
+            podesair = "Pode sair"
+            escreva(podesair)
+        }
+        senao
+        {
+            podesair = "Não pode sair"
+            escreva(podesair)
+        }
+    }
+}
