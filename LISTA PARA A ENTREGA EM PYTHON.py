@@ -267,3 +267,30 @@ if idade >= 18 and idade <50:
     print("Você é um adulto!")
 if idade >= 50:
     print("Você é idoso!")
+
+#Exercicio 20)
+
+print("Escolha entre PIX / Crédito / Debito")
+forma = str(input("Digite a forma de pagamento: "))
+if forma == "PIX":
+    print("Escaneie o QR CODE a seguir: \n")
+    print("Pagamento realizado em PIX")
+if forma == "Crédito":
+    print("Pagamento realizado em crédito ")
+if forma == "Debito":
+    print("Pagamento realizado em debito ")
+
+#Exercicio 21)
+
+preco = float(input("Digite o preço do produto: "))
+
+if preco >= 100 and preco < 300:
+    preco = preco * 0.9
+    print(f"Você tem 10% de desconto e o produto custa: {preco}")
+elif preco >= 300 and preco <= 500:
+    preco = preco * 0.85
+    print(f"Você tem 15% de desconto e o produto custa: {preco}")
+elif preco >= 500:
+    print(f"Você tem 20% de desconto e o produto custa: {preco}")
+else:
+    print(f"O produto não tem desconto e custa {preco}")
