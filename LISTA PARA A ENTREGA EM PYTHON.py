@@ -25,44 +25,57 @@ print(f"Status: {status}\n")
 
 #Exercicio 2)
 
-a = float(input("Digite um numero: "))
-b = float(input("Digite um segundo numero: "))
+a =int(input("Escreva um número= "))
+b =int(input("Escreva um outro número= "))
 
-soma = float(a+b)
-sub = float(a-b)
-mult = float(a*b)
-div = float(a/b)
-
-print("------------------------------\n")
-print(f"A soma é : {soma}\n")
-print("------------------------------\n")
-print(f"A subtração é: {sub}\n")
-print("------------------------------\n")
-print(f"A multiplicação é: {mult}\n")
-print("------------------------------\n")
-print(f"A divisão é: {div}")
-print("------------------------------")
+soma = a+b
+print("A soma entre {} e {} tem valor de= {}".format(a,b,soma))
 
 #Exercicio 3)
 
-c = float(input("Digite um numero: "))
+a =int(input("Escreva um número= "))
+b =int(input("Escreva um outro número= "))
 
-dobro = float(c*2)
-triplo = float(c*3)
-ant = float(c-1)
-suc = float(c+1)
-
-print("--------------------------\n")
-print(f"O dobro é: {dobro}\n")
-print("--------------------------\n")
-print(f"O triplo é: {triplo}\n")
-print("--------------------------\n")
-print(f"O antecessor é: {ant}\n")
-print("--------------------------\n")
-print(f"O sucessor é: {suc}")
-print("--------------------------")
+sub = a-b
+print("A subtração entre {} e {} tem valor de= {}".format(a,b,sub))
 
 #Exercicio 4)
+
+a =int(input("Escreva um número= "))
+b =int(input("Escreva um outro número= "))
+
+mult = a*b
+print("A multiplicação entre {} e {} tem valor de= {}".format(a,b,mult))
+
+#Exercicio 5)
+
+a =int(input("Escreva um número= "))
+b =int(input("Escreva um outro número= "))
+
+div = a/3
+
+print("A divisão entre {} e {} tem valor de= {}".format(a,b,div))
+
+#Exercicio 6)
+
+print("Dobro ou triplo \n")
+print("\n")
+
+a = int(input("Escreva um número= "))
+
+print("O dobro do núemro {} tem valor de= {} \n e o triplo dele tem valor de= {}".format(a,a*2,a*3))
+
+#Exercicio 7)
+
+print("Vamos ver qual é o antecessor e o sucessor de um número! \n")
+print("\n")
+
+a = int(input("Escreva um número= "))
+
+print("O antecessor do núemro {} tem valor de= {} \n e o sucessor dele tem valor de= {}".format(a,a-1,a+1))
+
+
+#Exercicio 8)
 
 alturat = float(input("Digite a altura do triângulo: "))
 baset = float(input("Digite a base do triangulo: "))
@@ -71,7 +84,7 @@ areat = float((alturat*baset) / 2)
 
 print(f"A área do triângulo é: {areat}\n")
 
-#Exercicio 5)
+#Exercicio 9)
 
 lado1 = float(input("Digite o primeiro lado do retângulo: "))
 lado2 = float(input("Digite o segundo lado do retângulo: "))
@@ -81,7 +94,7 @@ perimetro = float((lado1*2) +(lado2*2))
 print(f"O perímetro do retângulo é: {perimetro}\n")
 print("--------------------------")
 
-#Exercicio 6)
+#Exercicio 10)
 
 #Positivo ou Negativo
 
@@ -94,7 +107,7 @@ elif (a == 0):
 elif (a < 0):
     print("O numero é NEGATIVO!")
 
-#Exercicio 7)
+#Exercicio 11)
 
 #Impar ou Par
 
@@ -105,7 +118,7 @@ if (b % 2 == 0):
 elif (b % 2 == 1):
     print("O numero é IMPAR!")
 
-#Exercicio 8)
+#Exercicio 12)
 
 #Qual é maior? (2 Variaveis)
 
@@ -119,7 +132,7 @@ elif (c == d):
 elif (c < d):
     print(f"{d} é maior que {c}")
 
-#Exercicio 9)
+#Exercicio 13)
 
 #Qual é maior? (3 Variaveis)
 
@@ -134,7 +147,7 @@ elif (f > e) and (f > g):
 elif (g > f) and (g > e):
     print(f"{g} é maior que {f} e {e}")
 
-#Exercicio 10)
+#Exercicio 14)
 
 idade = int(input("Qual a sua idade?\n "))
 titulo = int(input("Digite 1 se você possui titulo de eleitor e 0 se você nao possui\n "))
@@ -144,7 +157,7 @@ if idade >= 18 and titulo == 1:
 else:
     print("Você não pode votar!")
 
-#Exercicio 11)
+#Exercicio 15)
 
 idade = int(input("Qual a sua idade?\n "))
 carteira = int(input("Digite 1 se você possui cnh e 0 se você nao possui\n "))
@@ -154,7 +167,7 @@ if idade >= 18 and carteira == 1:
 else:
     print("Você não pode dirigir!")
 
-#Exercicio 12)
+#Exercicio 16)
 
 valor = float(input("Qual o valor de compra?\n "))
 forma = str(input("Qual a forma de compra? (avista ou aprazo) \n"))
@@ -167,7 +180,7 @@ if forma == "avista":
 else:
     print("O valor a prazo é : {}".format(valor))
 
-#Exercicio 13)
+#Exercicio 17)
 
 print("EVENTO!\n")
 
@@ -179,7 +192,7 @@ if ingresso == "Sim" and idade >= 18 or ingresso == "sim" and idade <= 18:
 else:
     print("Você não pode entrar no evento!")
 
-#Exercicio 14)
+#Exercicio 18)
 
 print("Intervalo 10 a 50\n")
 
@@ -190,7 +203,7 @@ if n >= 10 and n <= 50:
 else:
     print("O numero digitado não esta entre 10 e 50!")
 
-#Exercicio 15)
+#Exercicio 19)
 
 print("Cadastro e autenticação!\n")
 
@@ -209,7 +222,7 @@ if cadastro == login:
 else:
     print("Login incorreto!")
 
-#Exercicio 16)
+#Exercicio 20)
 
 
 print("Calculadora Simples/n")
@@ -230,7 +243,7 @@ if operador == "/":
     else:
         print("Esta divisão não existe")
 
-#Exercicio 17)
+#Exercicio 21)
 
 print("Prática Esportiva\n")
 
@@ -245,7 +258,7 @@ if idade >= 12 and idade <= 18:
 else:
     print ("Você não tem a idade esperada no escopo!")
 
-#Exercício 18)
+#Exercício 22)
 
 podesair = str(input("Esta chovendo? \n"))
 if podesair.lower() == "nao":
@@ -255,7 +268,7 @@ else:
     podesair = "Não pode sair"
     print(podesair)
 
-#Exercicio 19)
+#Exercicio 23)
 
 idade = int(input("Qual a sua idade? "))
 
@@ -268,7 +281,7 @@ if idade >= 18 and idade <50:
 if idade >= 50:
     print("Você é idoso!")
 
-#Exercicio 20)
+#Exercicio 24)
 
 print("Escolha entre PIX / Crédito / Debito")
 forma = str(input("Digite a forma de pagamento: "))
@@ -280,7 +293,7 @@ if forma == "Crédito":
 if forma == "Debito":
     print("Pagamento realizado em debito ")
 
-#Exercicio 21)
+#Exercicio 25)
 
 preco = float(input("Digite o preço do produto: "))
 
@@ -294,3 +307,35 @@ elif preco >= 500:
     print(f"Você tem 20% de desconto e o produto custa: {preco}")
 else:
     print(f"O produto não tem desconto e custa {preco}")
+
+#Exercicio 26)
+
+print("Calculador de salario\n")
+
+salario = float(input("Digite seu salario: "))
+
+print(f"Seu salario antes do aumento e: {salario}\n")
+
+if salario <= 2000:
+    salario = salario * 1.15
+    salario_rounded = round(salario, 2)
+    print(f"Seu salario apos o aumento e: {salario_rounded}\n")
+else:
+    print("Voce nao recebeu aumento\n")
+
+#Exercicio 27)
+
+print("Vamos descobrir a natureza do triângulo!! \n")
+
+
+a = int(input("Escreva o lado A do triângulo= "))
+b = int(input("Escreva o lado B do triângulo= "))
+c = int(input("Escreva o lado C do triângulo= "))
+
+if a == b == c:
+  print("O triângulo é equilátero")
+elif a == b or a == c or b == c:
+  print("O triângulo é isóceles")
+else:
+  print("O triângulo é escaleno")
+
